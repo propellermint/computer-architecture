@@ -1,0 +1,24 @@
+ 	Конвейер №1: Выборка команды	Конвейер №1: Выборка операндов	Конвейер №1: Исполнение	Конвейер №1: Запись результатов	Конвейер №2: Выборка команды	Конвейер №2: Выборка операндов	Конвейер №2: Исполнение	Конвейер №2: Запись результатов	Конвейер №3: Выборка команды	Конвейер №3: Выборка операндов	Конвейер №3: Исполнение	Конвейер №3: Запись результатов
+												
+Такт №1	MOV AX, 0				ADD ESI, 2				MOV DX, [MEM+ESI]			
+Такт №2	CALL SUM	MOV AX, 0			ADC AX, DX	ADD ESI, 2			RET	MOV DX, [MEM+ESI]		
+Такт №3	JZ COUNT	CALL SUM	MOV AX, 0		ADC AX, DX	ADD ESI, 2			RET	MOV DX, [MEM+ESI]		
+Такт №4	JZ COUNT	CALL SUM	MOV AX, 0		ADC AX, DX	ADD ESI, 2			RET	MOV DX, [MEM+ESI]		
+Такт №5		JZ COUNT	CALL SUM	MOV AX, 0		ADC AX, DX	ADD ESI, 2		RET	MOV DX, [MEM+ESI]		
+Такт №6		JZ COUNT	CALL SUM	MOV AX, 0		ADC AX, DX		ADD ESI, 2	RET	MOV DX, [MEM+ESI]		
+Такт №7		JZ COUNT		CALL SUM		ADC AX, DX		ADD ESI, 2	RET	MOV DX, [MEM+ESI]		
+Такт №8		JZ COUNT		CALL SUM		ADC AX, DX				RET	MOV DX, [MEM+ESI]	
+Такт №9		JZ COUNT		CALL SUM		ADC AX, DX				RET	MOV DX, [MEM+ESI]	
+Такт №10		JZ COUNT				ADC AX, DX				RET		MOV DX, [MEM+ESI]
+Такт №11		JZ COUNT				ADC AX, DX					RET	MOV DX, [MEM+ESI]
+Такт №12		JZ COUNT					ADC AX, DX				RET	
+Такт №13		JZ COUNT						ADC AX, DX			RET	
+Такт №14		JZ COUNT						ADC AX, DX				RET
+Такт №15			JZ COUNT									
+Такт №16			JZ COUNT									
+Такт №17				JZ COUNT								
+Такт №18	JMP KON				NOP							
+Такт №19		JMP KON				NOP						
+Такт №20			JMP KON				NOP					
+Такт №21			JMP KON					NOP				
+Такт №22				JMP KON								
